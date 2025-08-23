@@ -86,22 +86,22 @@ function App() {
 
   return (
     < >
-      <div className='bg-blue-600 h-[100vh] w-full flex flex-col items-center justify-center overflow-hidden'>
+      <div className='bg-[#205E97] h-screen w-full flex flex-col items-center justify-center overflow-hidden'>
         <Navbar />
         <div className="container bg-white h-[70%] w-full m-10 md:w-[70%] md:mx-auto md:my-10 p-5 rounded-lg shadow-2xl overflow-auto">
-          <div className='flex max-sm:flex-col justify-between items-center mb-5 gap-2 flex-wrap sticky top-0 bg-blue-200 p-2'>
+          <div className='flex max-sm:flex-col justify-between items-center mb-5 gap-2 flex-wrap sticky top-0 bg-[#9AC3EA] p-2'>
             <input onChange={handleChange} value={todo} className='border border-blue-700 p-2 rounded-lg max-sm:w-full md:flex-grow ' type="text" name="todo" id="" />
             <div className='flex justify-between items-center gap-2 max-sm:w-full'>
               <input onChange={handleDateChange} value={date} className='border border-blue-700 p-2 rounded-lg max-sm:w-1/2' type="date" name="date" id="" />
               <input onChange={handleTimeChange} value={time} className='border border-blue-700 p-2 rounded-lg max-sm:w-1/2' type="time" name="time" id="" />
             </div>
-            <button onClick={handleAdd} disabled={todo.length < 3} className="bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 rounded "><RiStickyNoteAddFill className='cursor-pointer h-7 w-7' /></button>
+            <button onClick={handleAdd} disabled={todo.length < 3} className="bg-[#205E97] hover:bg-[#68A5DF] text-white px-4 py-2 rounded "><RiStickyNoteAddFill className='cursor-pointer h-7 w-7' /></button>
           </div>
           <div className="tcom">
             <input className='cursor-pointer' onChange={toggleFinished} type="checkbox" checked={showFinished} name="" id="show" />
             <label htmlFor="show">Tasks completed</label>
           </div>
-          <div className="todos w-full flex flex-col my-1 bg-blue-200 p-3 rounded-lg align-middle overflow-auto">
+          <div className="todos w-full flex flex-col my-1 bg-[#68A5DF] p-3 rounded-lg align-middle overflow-auto">
             {todos.length === 0 && <p className='text-center text-gray-500'>No tasks added yet!</p>}
             {todos.map((item) => {
               return ((showFinished || !item.isCompleted) && <div key={item.id} className="todo-item flex items-center justify-between wrap-anywhere min-h-1 w-full my-2 p-2 bg-white rounded-lg shadow-black text-black  gap-1 ">
