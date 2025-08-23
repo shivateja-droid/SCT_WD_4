@@ -28,7 +28,7 @@ The app is developed using **React** + **Vite** for fast development and hot rel
 
 Below is a screenshot of the DoNest app interface:
 
-![DoNest To-Do List App](./assets/image1.png)
+![DoNest To-Do List App](src/assets/image1.png)
 <!-- Image 1 referenced as per the user instruction -->
 
 ---
