@@ -86,7 +86,7 @@ function App() {
 
   return (
     < >
-      <div className='bg-blue-600 h-[100vh] w-full flex flex-col items-center justify-center overflow-hidden'>
+      <div className='bg-[#5859b4] h-screen w-full flex flex-col items-center justify-center overflow-hidden'>
         <Navbar />
         <div className="container bg-white h-[70%] w-full m-10 md:w-[70%] md:mx-auto md:my-10 p-5 rounded-lg shadow-2xl overflow-auto">
           <div className='flex max-sm:flex-col justify-between items-center mb-5 gap-2 flex-wrap sticky top-0 bg-blue-200 p-2'>
@@ -95,7 +95,7 @@ function App() {
               <input onChange={handleDateChange} value={date} className='border border-blue-700 p-2 rounded-lg max-sm:w-1/2' type="date" name="date" id="" />
               <input onChange={handleTimeChange} value={time} className='border border-blue-700 p-2 rounded-lg max-sm:w-1/2' type="time" name="time" id="" />
             </div>
-            <button onClick={handleAdd} disabled={todo.length < 3} className="bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 rounded "><RiStickyNoteAddFill className='cursor-pointer h-7 w-7' /></button>
+            <button onClick={handleAdd} disabled={todo.length < 3} className="bg-[#5859b4] hover:bg-[#4143b9] text-white px-4 py-2 rounded "><RiStickyNoteAddFill className='cursor-pointer h-7 w-7' /></button>
           </div>
           <div className="tcom">
             <input className='cursor-pointer' onChange={toggleFinished} type="checkbox" checked={showFinished} name="" id="show" />
